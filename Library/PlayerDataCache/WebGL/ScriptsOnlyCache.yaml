@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - asartiment
     - autoclick
     - cliczone
+    - deliter
+    - langvege
     - menu
     - perenos
     - upgrate
@@ -46,6 +48,15 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateMachineNode
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -55,6 +66,7 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
@@ -106,20 +118,11 @@ ScriptsOnlyBuild:
     fullTypeName: menu
     methodName: Play2
   - assembly: Assembly-CSharp
-    fullTypeName: menu
-    methodName: Quit
-  - assembly: Assembly-CSharp
     fullTypeName: upgrate
     methodName: upgratetime
   - assembly: Assembly-CSharp
-    fullTypeName: yandex
-    methodName: Stas
-  - assembly: Assembly-CSharp
     fullTypeName: upgrate
     methodName: upgrateclick
-  - assembly: Assembly-CSharp
-    fullTypeName: cliczone
-    methodName: delitsev
   - assembly: Assembly-CSharp
     fullTypeName: cliczone
     methodName: tap
@@ -132,6 +135,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: menu
     methodName: back
+  - assembly: Assembly-CSharp
+    fullTypeName: menu
+    methodName: noshop
+  - assembly: Assembly-CSharp
+    fullTypeName: yandex
+    methodName: Stas
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -146,36 +155,46 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16618}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16622}
     - Class: 114
-      Script: {instanceID: 17270}
+      Script: {instanceID: 17278}
     - Class: 114
-      Script: {instanceID: 17916}
+      Script: {instanceID: 17924}
     - Class: 114
-      Script: {instanceID: 18168}
+      Script: {instanceID: 18176}
     - Class: 114
-      Script: {instanceID: 21040}
+      Script: {instanceID: 21046}
     - Class: 114
-      Script: {instanceID: 21180}
+      Script: {instanceID: 21186}
     - Class: 114
-      Script: {instanceID: 21750}
+      Script: {instanceID: 21754}
     - Class: 114
-      Script: {instanceID: 21966}
+      Script: {instanceID: 21970}
     - Class: 114
-      Script: {instanceID: 22012}
+      Script: {instanceID: 22016}
     - Class: 114
-      Script: {instanceID: 22064}
+      Script: {instanceID: 22068}
     - Class: 114
-      Script: {instanceID: 22372}
+      Script: {instanceID: 22376}
     - Class: 114
-      Script: {instanceID: 22748}
+      Script: {instanceID: 63944}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -211,36 +230,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16618}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16622}
     - Class: 114
-      Script: {instanceID: 17390}
+      Script: {instanceID: 17398}
     - Class: 114
-      Script: {instanceID: 17916}
+      Script: {instanceID: 17924}
     - Class: 114
-      Script: {instanceID: 18168}
+      Script: {instanceID: 18176}
     - Class: 114
-      Script: {instanceID: 19190}
+      Script: {instanceID: 19198}
     - Class: 114
-      Script: {instanceID: 19658}
+      Script: {instanceID: 19664}
     - Class: 114
-      Script: {instanceID: 19800}
+      Script: {instanceID: 19806}
     - Class: 114
-      Script: {instanceID: 20120}
+      Script: {instanceID: 19920}
     - Class: 114
-      Script: {instanceID: 21040}
+      Script: {instanceID: 20128}
     - Class: 114
-      Script: {instanceID: 21750}
+      Script: {instanceID: 21046}
     - Class: 114
-      Script: {instanceID: 21966}
+      Script: {instanceID: 21754}
     - Class: 114
-      Script: {instanceID: 22064}
+      Script: {instanceID: 21970}
     - Class: 114
-      Script: {instanceID: 22372}
+      Script: {instanceID: 22068}
+    - Class: 114
+      Script: {instanceID: 22376}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -248,6 +273,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -272,34 +299,44 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16616}
+    - Class: 114
       Script: {instanceID: 16618}
     - Class: 114
-      Script: {instanceID: 16670}
+      Script: {instanceID: 16622}
     - Class: 114
-      Script: {instanceID: 17916}
+      Script: {instanceID: 16626}
     - Class: 114
-      Script: {instanceID: 18168}
+      Script: {instanceID: 16628}
     - Class: 114
-      Script: {instanceID: 19490}
+      Script: {instanceID: 17924}
     - Class: 114
-      Script: {instanceID: 20956}
+      Script: {instanceID: 18176}
     - Class: 114
-      Script: {instanceID: 21040}
+      Script: {instanceID: 21046}
     - Class: 114
-      Script: {instanceID: 21750}
+      Script: {instanceID: 21754}
     - Class: 114
-      Script: {instanceID: 21950}
+      Script: {instanceID: 21954}
     - Class: 114
-      Script: {instanceID: 21966}
+      Script: {instanceID: 21970}
     - Class: 114
-      Script: {instanceID: 22372}
+      Script: {instanceID: 22068}
     - Class: 114
-      Script: {instanceID: 22380}
+      Script: {instanceID: 22376}
     - Class: 114
-      Script: {instanceID: 23732}
+      Script: {instanceID: 22384}
+    - Class: 114
+      Script: {instanceID: 22752}
+    - Class: 114
+      Script: {instanceID: 23734}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -307,6 +344,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -319,10 +358,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
+      Hash: 16c8cbd24a32f9d6625615e0e9098073
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
       Hash: 0249933f35dcc970b31eaae0159aebf9
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
       Hash: 0b7995e6c59201aa9b4ad6a0aecb4621
@@ -331,16 +382,28 @@ ScriptsOnlyBuild:
     className: Button
   - hash:
       serializedVersion: 2
+      Hash: 1ed846c1ed9d69c8c2fcff9a6896b04f
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: b18151310f999106767addd7177d1a99
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UIElements
     className: PanelRaycaster
-  - hash:
-      serializedVersion: 2
-      Hash: 16c8cbd24a32f9d6625615e0e9098073
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 74007bf515c4306e564934b368232bdb
@@ -403,7 +466,7 @@ ScriptsOnlyBuild:
     className: SimpleScript
   - hash:
       serializedVersion: 2
-      Hash: 0457dfa5f583db1520942db905ee0a4c
+      Hash: d51ffc83071f6817bd1b4e0633f80c19
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: upgrate
@@ -721,7 +784,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: ed58bccfd89a8d58b8a3841672d0bbbb
+      Hash: 4f7abc24db0b25490892667262e9bad5
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: perenos
@@ -767,12 +830,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: TMPro.Examples
     className: TMP_UiFrameRateCounter
-  - hash:
-      serializedVersion: 2
-      Hash: b18151310f999106767addd7177d1a99
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Mask
   - hash:
       serializedVersion: 2
       Hash: d3550ca29959ded14a048f6dc981f237
@@ -845,6 +902,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: DictionaryAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 84473da8a3439db6fe61951e3c66b4e0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: langvege
   - hash:
       serializedVersion: 2
       Hash: 6298a10412e94e11ad85ac6148c9dda1
@@ -1015,12 +1078,6 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: HorizontalLayoutGroup
-  - hash:
-      serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1087,12 +1144,6 @@ ScriptsOnlyBuild:
     className: UnityOnDeselectMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1ed846c1ed9d69c8c2fcff9a6896b04f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: f6831ac80ec81c5d5b370c0ed0fee997
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1129,7 +1180,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: c990938f56d68229b3ee359a0e4ee9ad
+      Hash: 888885f8110f2b633919e79d59ed3924
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: asartiment
@@ -1141,13 +1192,13 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
-      Hash: d17a5d8281224de05cbedfa1d8d3f179
+      Hash: 8339d1f0e7d6439adf8bfcc3caeef63f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: cliczone
   - hash:
       serializedVersion: 2
-      Hash: 747c1894294953cc7e61be382c7db64f
+      Hash: 1914925ab64361575f57dcad0c8eb8d9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: menu
@@ -1225,7 +1276,7 @@ ScriptsOnlyBuild:
     className: TMP_FrameRateCounter
   - hash:
       serializedVersion: 2
-      Hash: 19d61294e440bd0fad7be5473ccb4344
+      Hash: a1ca8227e496741a12f81e65de77ab59
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: yandex
@@ -1259,12 +1310,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 41ac98c9880a6f3758ca69dbaa1e7777
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
       Hash: 751e5bae2a317288c2ab58d66687092b
@@ -1547,6 +1592,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: de9ff4925a027e5236663a6050e6f28b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: deliter
+  - hash:
+      serializedVersion: 2
+      Hash: 0f1204914b972dbe1b4d15eed03000fe
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: scriptTexttest
   platform: 20
   scenePathNames:
   - Assets/Scenes/Menu.unity

@@ -6,17 +6,26 @@ using TMPro;
 
 public class yandex : MonoBehaviour
 {
-    [SerializeField] private TMP_Text indecator;
     [DllImport("__Internal")]
-    private static extern void Hello();
+    private static extern void rec();
+
+    [SerializeField] private TMP_Text indecator;
+    [SerializeField] private perenos  perenos;
+
+    private void Awake()
+    {
+        perenos = (GameObject.Find("perenos")).GetComponent<perenos>();
+    }
 
     public void Stas()
     {
-        Hello();
+        rec();
     }
 
-    public void nemenes(string name)
+    public void addsmanu()
     {
-        indecator.text = name;
+        indecator.text = (int.Parse(indecator.text) + 2500).ToString();
+        perenos.save.den = int.Parse(indecator.text);
+
     }
 }

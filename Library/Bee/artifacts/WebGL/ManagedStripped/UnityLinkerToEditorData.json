@@ -5,14 +5,26 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -20,6 +32,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -45,7 +63,11 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/Menu.unity",
+              "Assets/Scenes/shop.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -66,8 +88,22 @@
             "icon": null
           },
           {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/Menu.unity",
+              "Assets/Scenes/shop.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "SampleClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/Menu.unity",
+              "Assets/Scenes/shop.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           }
@@ -339,7 +375,9 @@
           {
             "name": "Renderer",
             "scenes": [
-              "Assets/Scenes/Game.unity"
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/Menu.unity",
+              "Assets/Scenes/shop.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -397,7 +435,9 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
-              "Assets/Scenes/Game.unity"
+              "Assets/Scenes/Game.unity",
+              "Assets/Scenes/Menu.unity",
+              "Assets/Scenes/shop.unity"
             ],
             "dependencyType": 0,
             "icon": null

@@ -7,11 +7,13 @@ using TMPro;
 public class asartiment : MonoBehaviour
 {
     [SerializeField] private GameObject Scroll;
-    [SerializeField] private string[] nas;
+    [SerializeField] private int[] nas;
     [SerializeField] private Sprite[] car;
-    [SerializeField] private string[] nas2;
+    [SerializeField] private Sprite[] cars;
+    [SerializeField] private int[] nas2;
     [SerializeField] private Sprite[] car2;
-    [SerializeField] private int[] zen;
+    [SerializeField] private Sprite[] cars2;
+    //[SerializeField] private int[] zen;
     [SerializeField] private GameObject button;
     [SerializeField] private TMP_Text indecator;
     [SerializeField] private perenos perenos;
@@ -30,73 +32,92 @@ public class asartiment : MonoBehaviour
                 if(nas.Length > 0)
                 {
                     for(int i = 0; i < nas.Length; i++)
+                    {
+                        GameObject pr = Instantiate(button, Scroll.transform);
+                        if(i == 0)
                         {
-                            GameObject pr = Instantiate(button, Scroll.transform, true);
-                            //pr.transform.position = new Vector3(-7 + (3 * i), 0, 10);
-                            pr.GetComponentInChildren<TMP_Text>().text = nas[i];
-                            pr.GetComponent<Image>().sprite = car[i];
-                            int i1 = i;
-                            pr.GetComponent<Button>().onClick.AddListener(() => cost1(i1));
+                            pr.GetComponentInChildren<TMP_Text>().text = "";
                         }
+                        else if(!perenos.open[i])
+                        {
+                            pr.GetComponentInChildren<TMP_Text>().text = nas[i].ToString();
+                        }
+                        if(perenos.open[i])
+                        {
+                            pr.GetComponent<Image>().sprite = cars[i];
+                        }
+                        else
+                        {
+                            pr.GetComponent<Image>().sprite = car[i];
+                        }
+                        int i1 = i;
+                        pr.GetComponent<Button>().onClick.AddListener(() => cost1(i1));
+                    }
                 }
                 break;
             case 1:
                 if(nas2.Length > 0)
                 {   
                     for(int i = 0; i < nas2.Length; i++)
+                    {
+                        GameObject pr = Instantiate(button, Scroll.transform);
+                        if(i == 0)
                         {
-                            GameObject pr = Instantiate(button, Scroll.transform, true);
-                            //pr.transform.position = new Vector3(-7 + (3 * i), 0, 10);
-                            pr.GetComponentInChildren<TMP_Text>().text = nas2[i];
-                            pr.GetComponent<Image>().sprite = car2[i];
-                            int i1 = i;
-                            pr.GetComponent<Button>().onClick.AddListener(() => cost2(i1));
+                            pr.GetComponentInChildren<TMP_Text>().text = "";
                         }
+                        else if(!perenos.open2[i])
+                        {
+                            pr.GetComponentInChildren<TMP_Text>().text = nas2[i].ToString();
+                        }
+                        if(perenos.open2[i])
+                        {
+                            pr.GetComponent<Image>().sprite = cars2[i];
+                        }
+                        else
+                        {
+                            pr.GetComponent<Image>().sprite = car2[i];
+                        }
+                        int i1 = i;
+                        pr.GetComponent<Button>().onClick.AddListener(() => cost2(i1));
+                    }
                 }
                 break;
+        
         }
 
     }
 
     public void cost1(int smen)
     {
-        switch (smen)
+        if(perenos.open[smen])
         {
-            case 0:
-                if(zen[smen] <= int.Parse(indecator.text))
-                {
-                    indecator.text = (int.Parse(indecator.text) - zen[smen]).ToString();
-                    GetComponentsInChildren<TMP_Text>()[0].text = "aaaaaaaaaa";
-                }
-                break;
-            case 1:
-                if(zen[smen] <= int.Parse(indecator.text))
-                {
-                    indecator.text = (int.Parse(indecator.text) - zen[smen]).ToString();
-                    GetComponentsInChildren<TMP_Text>()[1].text = "aaaaaaaaaa";
-                }
-                break;
+            perenos.save.csot = smen;
+        }
+        else if(nas[smen] <= int.Parse(indecator.text))
+        {
+            indecator.text = (int.Parse(indecator.text) - nas[smen]).ToString();
+            perenos.save.den = int.Parse(indecator.text);
+            perenos.save.csot = smen;
+            perenos.open[smen] = true;
+            GetComponentsInChildren<TMP_Text>()[smen].text = "";
+            GetComponentsInChildren<Image>()[smen + 3].sprite = cars[smen];
         }
     }
 
     public void cost2(int smen)
     {
-        switch (smen)
+        if(perenos.open2[smen])
         {
-            case 0:
-                if(zen[smen] <= int.Parse(indecator.text))
-                {
-                    indecator.text = (int.Parse(indecator.text) - zen[smen]).ToString();
-                    GetComponentsInChildren<TMP_Text>()[0].text = "aaaaaaaaaa";
-                }
-                break;
-            case 1:
-                if(zen[smen] <= int.Parse(indecator.text))
-                {
-                    indecator.text = (int.Parse(indecator.text) - zen[smen]).ToString();
-                    GetComponentsInChildren<TMP_Text>()[1].text = "aaaaaaaaaa";
-                }
-                break;
+            perenos.save.csot2 = smen;
+        }
+        else if(nas2[smen] <= int.Parse(indecator.text))
+        {
+            indecator.text = (int.Parse(indecator.text) - nas2[smen]).ToString();
+            perenos.save.den = int.Parse(indecator.text);
+            perenos.save.csot2 = smen;
+            perenos.open2[smen] = true;
+            GetComponentsInChildren<TMP_Text>()[smen].text = "";
+            GetComponentsInChildren<Image>()[smen + 3].sprite = cars2[smen];
         }
     }
 }
