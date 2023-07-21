@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8183105130013121327}
   - component: {fileID: 1646230438880587350}
   - component: {fileID: 6756973737107192263}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: den
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 4612415521256516518}
   - component: {fileID: 1400734144887506968}
   - component: {fileID: 446727575904473622}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: denga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &1400734144887506968
 MonoBehaviour:
   m_ObjectHideFlags: 0

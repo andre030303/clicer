@@ -45,7 +45,15 @@ public class menu : MonoBehaviour
             advshow();
             time = lengthtime;
         }
-        
+    }
+
+    void Update()
+    {
+        if(time > 0f)
+        {
+            time -= Time.deltaTime;
+        }
+
         if(Input.GetKey(KeyCode.I) &&Input.GetKey(KeyCode.O) && Input.GetKey(KeyCode.P))
         {
             perenos.GetComponent<perenos>().save.scen = 0;
@@ -65,14 +73,6 @@ public class menu : MonoBehaviour
             perenos.GetComponent<perenos>().save.upg2 = 0f;
             perenos.GetComponent<perenos>().save.upg3 = 0f;
             perenos.GetComponent<perenos>().Save();
-        }
-    }
-
-    void Update()
-    {
-        if(time > 0f)
-        {
-            time -= Time.deltaTime;
         }
     }
 

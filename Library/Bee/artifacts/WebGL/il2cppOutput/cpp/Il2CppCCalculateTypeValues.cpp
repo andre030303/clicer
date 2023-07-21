@@ -802,6 +802,7 @@ struct FontDefinitionU5BU5D_t31BDC3E2D72918B36F815F95F7CBA1F057E3DA39;
 struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
 struct FontWeightPairU5BU5D_t76E8DB55C81EEBEFA2E6D1D3E3B3EA1FB4C4954F;
 struct GUIStyleU5BU5D_t1BA4BCF4D4D32DF07E9B84F1750D964DF33B0FEC;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 struct GlyphU5BU5D_t345CEC8703A6C650639C40DB7D35269A2D467FC5;
 struct GlyphMarshallingStructU5BU5D_t9424A4B1FAAD615472A9346208026B1B9E22069E;
 struct GlyphPairAdjustmentRecordU5BU5D_tD5DD2A739A4CA745E7F28ECCB2CD0BD0A65A38F7;
@@ -7985,12 +7986,12 @@ struct Sse_t1388C7824E01DCC99D081049BA94FD2712BF858B  : public RuntimeObject
 struct Sse2_t7D2C1FEA4C8F078FDAE4AFF2DC6276B49F2466CF  : public RuntimeObject
 {
 };
-struct U3CU3Ec__DisplayClass11_0_t1D6C15742E23A35749E360329133B6D64D976272  : public RuntimeObject
+struct U3CU3Ec__DisplayClass12_0_t39EB204D81996C8A6C6B3129648E57C31EBAE4FE  : public RuntimeObject
 {
 	int32_t ___i1;
 	asartiment_t64D6F199F29334EC773108CE24EE1D145C028944* ___U3CU3E4__this;
 };
-struct U3CU3Ec__DisplayClass11_1_tB0DCC81F7840747388B74683D857D7A5953C8AA0  : public RuntimeObject
+struct U3CU3Ec__DisplayClass12_1_tDAEAB30EF27E37DE817B85BD5F5EFE351CD25DEE  : public RuntimeObject
 {
 	int32_t ___i1;
 	asartiment_t64D6F199F29334EC773108CE24EE1D145C028944* ___U3CU3E4__this;
@@ -37939,6 +37940,7 @@ struct asartiment_t64D6F199F29334EC773108CE24EE1D145C028944  : public MonoBehavi
 	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___car2;
 	SpriteU5BU5D_tCEE379E10CAD9DBFA770B331480592548ED0EA1B* ___cars2;
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___button;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___cknopki;
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___indecator;
 	perenos_t624114809DE1E358D518C00D5A96F8DEE0AAAF11* ___perenos;
 };
@@ -50808,9 +50810,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3680 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3681;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3681 = { sizeof(scriptTexttest_t82F4F21D786EF3802D0C94C3B71A62AF50BB514B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3682;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3682 = { sizeof(U3CU3Ec__DisplayClass11_0_t1D6C15742E23A35749E360329133B6D64D976272), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3682 = { sizeof(U3CU3Ec__DisplayClass12_0_t39EB204D81996C8A6C6B3129648E57C31EBAE4FE), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3683;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3683 = { sizeof(U3CU3Ec__DisplayClass11_1_tB0DCC81F7840747388B74683D857D7A5953C8AA0), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3683 = { sizeof(U3CU3Ec__DisplayClass12_1_tDAEAB30EF27E37DE817B85BD5F5EFE351CD25DEE), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3684;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3684 = { sizeof(asartiment_t64D6F199F29334EC773108CE24EE1D145C028944), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3685;

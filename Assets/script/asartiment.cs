@@ -15,6 +15,7 @@ public class asartiment : MonoBehaviour
     [SerializeField] private Sprite[] cars2;
     //[SerializeField] private int[] zen;
     [SerializeField] private GameObject button;
+    [SerializeField] private GameObject[] cknopki;
     [SerializeField] private TMP_Text indecator;
     [SerializeField] private perenos perenos;
 
@@ -52,6 +53,7 @@ public class asartiment : MonoBehaviour
                         }
                         int i1 = i;
                         pr.GetComponent<Button>().onClick.AddListener(() => cost1(i1));
+                        cknopki[i] = pr;
                     }
                 }
                 break;
@@ -79,6 +81,7 @@ public class asartiment : MonoBehaviour
                         }
                         int i1 = i;
                         pr.GetComponent<Button>().onClick.AddListener(() => cost2(i1));
+                        cknopki[i] = pr;
                     }
                 }
                 break;
@@ -99,8 +102,8 @@ public class asartiment : MonoBehaviour
             perenos.save.den = int.Parse(indecator.text);
             perenos.save.csot = smen;
             perenos.open[smen] = true;
-            GetComponentsInChildren<TMP_Text>()[smen].text = "";
-            GetComponentsInChildren<Image>()[smen + 3].sprite = cars[smen];
+            cknopki[smen].GetComponentInChildren<TMP_Text>().text = "";
+            cknopki[smen].GetComponent<Image>().sprite = cars[smen];
         }
     }
 
@@ -116,8 +119,8 @@ public class asartiment : MonoBehaviour
             perenos.save.den = int.Parse(indecator.text);
             perenos.save.csot2 = smen;
             perenos.open2[smen] = true;
-            GetComponentsInChildren<TMP_Text>()[smen].text = "";
-            GetComponentsInChildren<Image>()[smen + 3].sprite = cars2[smen];
+            cknopki[smen].GetComponentInChildren<TMP_Text>().text = "";
+            cknopki[smen].GetComponent<Image>().sprite = cars2[smen];
         }
     }
 }
