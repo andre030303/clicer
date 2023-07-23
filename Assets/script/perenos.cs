@@ -34,6 +34,7 @@ public class perenos : MonoBehaviour
     public bool[] open2;
     [SerializeField] private float time;
     public string lang;
+    public float time2;
 
     [DllImport("__Internal")]
     private static extern void saveExtern(string date);
@@ -98,6 +99,11 @@ public class perenos : MonoBehaviour
         if(time > 0f)
         {
             time -= Time.deltaTime;
+        }
+
+        if(time2 > 0f)
+        {
+            time2 -= Time.deltaTime;
         }
     } 
 }

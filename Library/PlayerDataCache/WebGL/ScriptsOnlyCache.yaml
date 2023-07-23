@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - PorvVocus
     - asartiment
     - autoclick
     - cliczone
@@ -125,7 +126,7 @@ ScriptsOnlyBuild:
     methodName: tap
   - assembly: Assembly-CSharp
     fullTypeName: menu
-    methodName: shop
+    methodName: recl
   - assembly: Assembly-CSharp
     fullTypeName: upgrate
     methodName: upgrateautoclick
@@ -192,6 +193,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22070}
     - Class: 114
       Script: {instanceID: 22378}
+    - Class: 114
+      Script: {instanceID: 25540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -263,6 +266,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22070}
     - Class: 114
       Script: {instanceID: 22378}
+    - Class: 114
+      Script: {instanceID: 25540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -334,6 +339,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 22754}
     - Class: 114
       Script: {instanceID: 23738}
+    - Class: 114
+      Script: {instanceID: 25540}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -781,7 +788,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 4f7abc24db0b25490892667262e9bad5
+      Hash: e3a4d81751a543f29f731d231fe89b94
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: perenos
@@ -1201,7 +1208,7 @@ ScriptsOnlyBuild:
     className: cliczone
   - hash:
       serializedVersion: 2
-      Hash: 1914925ab64361575f57dcad0c8eb8d9
+      Hash: a1d96edb4b874c5eb75c094da61d57b7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: menu
@@ -1601,6 +1608,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 751e5bae2a317288c2ab58d66687092b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: PorvVocus
   platform: 20
   scenePathNames:
   - Assets/Scenes/Menu.unity

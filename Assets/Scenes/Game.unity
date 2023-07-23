@@ -539,8 +539,10 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
+  - component: {fileID: 519420034}
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -718,6 +720,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ae7c85365c96894eb3cc30ba1d99d11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6140e05c60b2469b92a4ee0d40c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perenos: {fileID: 0}
+  time: 0
+  lengthtime: 180
 --- !u!1 &527299949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,9 +1677,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1407298882}
+      - m_Target: {fileID: 519420035}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
-        m_MethodName: shop
+        m_MethodName: recl
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2187,7 +2216,6 @@ GameObject:
   - component: {fileID: 1407298885}
   - component: {fileID: 1407298884}
   - component: {fileID: 1407298883}
-  - component: {fileID: 1407298882}
   m_Layer: 5
   m_Name: menu
   m_TagString: Untagged
@@ -2216,21 +2244,6 @@ RectTransform:
   m_AnchoredPosition: {x: -48.609985, y: -61.22}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1407298882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407298880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dec6140e05c60b2469b92a4ee0d40c36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  perenos: {fileID: 0}
-  time: 0
-  lengthtime: 180
 --- !u!114 &1407298883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2275,7 +2288,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1407298882}
+      - m_Target: {fileID: 519420035}
         m_TargetAssemblyTypeName: menu, Assembly-CSharp
         m_MethodName: back
         m_Mode: 1

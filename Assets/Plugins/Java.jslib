@@ -1,5 +1,5 @@
 mergeInto(LibraryManager.library, {
-  tabl: function (date) {
+  tabl: function (clic) {
     ysdk.getLeaderboards()
     .then(lb => {
       var clicString = UTF8ToString(clic);
@@ -15,6 +15,9 @@ mergeInto(LibraryManager.library, {
       callbacks: {
         onClose: function(wasShown) {
           // some action after close
+          if(wasShown){
+            myGameInstance.SendMessage('Main Camera', 'shop');
+          }
         },
         onError: function(error) {
           // some action on error

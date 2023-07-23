@@ -13,7 +13,8 @@ public class menu : MonoBehaviour
     private static extern void advshow();
 
     [SerializeField] private float time;
-    [SerializeField] private float lengthtime = 180f;
+    [SerializeField] private float lengthtime = 200f;
+    public bool PorvVocus = true;
 
     private void Awake()
     {
@@ -37,23 +38,30 @@ public class menu : MonoBehaviour
         Application.Quit();
     }
 
-    public void shop()
+    public void recl()
     {
-        SceneManager.LoadScene(2);
-        if(time <= 0f)
+        if(perenos.GetComponent<perenos>().time2 <= 0f)
         {
             advshow();
-            time = lengthtime;
+            PorvVocus = false;
+            AudioListener.pause = true;
+            perenos.GetComponent<perenos>().time2 = lengthtime;
         }
+        else
+        {
+            shop();
+        }
+    }
+
+    public void shop()
+    {
+        PorvVocus = true;
+        AudioListener.pause = false;
+        SceneManager.LoadScene(2);
     }
 
     void Update()
     {
-        if(time > 0f)
-        {
-            time -= Time.deltaTime;
-        }
-
         if(Input.GetKey(KeyCode.I) &&Input.GetKey(KeyCode.O) && Input.GetKey(KeyCode.P))
         {
             perenos.GetComponent<perenos>().save.scen = 0;
