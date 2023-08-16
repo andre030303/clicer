@@ -13,7 +13,6 @@ public class asartiment : MonoBehaviour
     [SerializeField] private int[] nas2;
     [SerializeField] private Sprite[] car2;
     [SerializeField] private Sprite[] cars2;
-    //[SerializeField] private int[] zen;
     [SerializeField] private GameObject button;
     [SerializeField] private GameObject[] cknopki;
     [SerializeField] private TMP_Text indecator;

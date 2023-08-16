@@ -20,12 +20,14 @@ public class yandex : MonoBehaviour
     public void Stas()
     {
         rec();
+        AudioListener.pause = true;
     }
 
     public void addsmanu()
     {
         indecator.text = (int.Parse(indecator.text) + 2500).ToString();
         perenos.save.den = int.Parse(indecator.text);
+        AudioListener.pause = false;
 
     }
 }

@@ -64,6 +64,7 @@ public class perenos : MonoBehaviour
     {
         save =JsonUtility.FromJson<save>(value);
         canvert();
+        
     }  
 
     public void convert()

@@ -75,8 +75,12 @@ mergeInto(LibraryManager.library, {
   },
   loadExtern: function () {
     player.getData().then(_date => {
-      const myJSON = JSON.stringify(_date);
-      myGameInstance.SendMessage('perenos', 'Load', myJSON);
+      if (_date != null)
+      {
+        const myJSON = JSON.stringify(_date);
+        myGameInstance.SendMessage('perenos', 'Load', myJSON);
+      }
+      
     });
   },
 });

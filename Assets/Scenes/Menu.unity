@@ -318,6 +318,7 @@ MonoBehaviour:
   open2: 000000
   time: 0
   lang: 
+  time2: 0
 --- !u!4 &615129907
 Transform:
   m_ObjectHideFlags: 0
@@ -361,16 +362,16 @@ RectTransform:
   m_GameObject: {fileID: 808380125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1756}
-  m_LocalScale: {x: 0.8552132, y: 2.21683, z: 0.9297087}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 82760578}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -230.44, y: 178}
-  m_SizeDelta: {x: 217.96002, y: 162.22}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.275, y: 0.5}
+  m_AnchoredPosition: {x: 26.2, y: 45.320007}
+  m_SizeDelta: {x: -55.149994, y: 90.640015}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &808380127
 MonoBehaviour:
@@ -455,9 +456,9 @@ MonoBehaviour:
   m_FillMethod: 4
   m_FillAmount: 1
   m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_FillOrigin: 3
+  m_UseSpriteMesh: 1
+  m_PixelsPerUnitMultiplier: 2.54
 --- !u!222 &808380129
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -570,7 +571,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -24.191, y: -16.500992}
+  m_AnchoredPosition: {x: -41.2, y: -16.500992}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1629748456
@@ -798,6 +799,7 @@ MonoBehaviour:
   perenos: {fileID: 0}
   time: 0
   lengthtime: 180
+  PorvVocus: 1
 --- !u!82 &1740214705
 AudioSource:
   m_ObjectHideFlags: 0
@@ -935,16 +937,16 @@ RectTransform:
   m_GameObject: {fileID: 1750247568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1196.8}
-  m_LocalScale: {x: -0.69190687, y: 2.2334373, z: 1.2721192}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 82760578}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 263.8, y: 181}
-  m_SizeDelta: {x: 237.88, y: 160.22}
+  m_AnchorMin: {x: 0.72625005, y: 0}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -28.100037, y: 45.31897}
+  m_SizeDelta: {x: -54.15, y: 90.642}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1750247570
 MonoBehaviour:

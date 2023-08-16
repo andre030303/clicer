@@ -42,7 +42,9 @@ public class menu : MonoBehaviour
     {
         if(perenos.GetComponent<perenos>().time2 <= 0f)
         {
-            advshow();
+            #if UNITY_WEBG
+                advshow();
+            #endif
             PorvVocus = false;
             AudioListener.pause = true;
             perenos.GetComponent<perenos>().time2 = lengthtime;
